@@ -1,0 +1,117 @@
+// Section styles
+.nomadlab-section {
+  background-color:$white;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+// Text content
+.text-content {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color:$blue;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: $text-color;
+  
+  .highlight {
+    color: $highlight-color;
+    font-weight: 600;
+  }
+}
+
+// Button
+.cta-button {
+  background-color:$blue;
+  color: $white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  
+  &:hover {
+    background-color: darken($red, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($primary-color, 0.3);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Image content
+.image-content {
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+// Responsive design
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .image-content {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .nomadlab-section {
+    padding: 40px 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}

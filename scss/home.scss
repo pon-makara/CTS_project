@@ -2,3 +2,16 @@
 @import "./varaible";
 @import "./compoments/home/navbar";
 @import "./compoments/home/footer";
+@import "./compoments/home/hero";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}

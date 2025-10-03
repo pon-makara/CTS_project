@@ -1,0 +1,19 @@
+@import "./mixins";
+@import "./varaible";
+@import "./compoments/service/hero";
+@import "./compoments/service/navbar";
+@import "./compoments/service/service";
+@import "./compoments/service/footer";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
